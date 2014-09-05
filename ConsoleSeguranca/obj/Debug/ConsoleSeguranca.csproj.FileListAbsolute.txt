@@ -1,0 +1,6 @@
+D:\temp\csharpToPhp\ConsoleSeguranca\bin\Debug\ConsoleSeguranca.exe.config
+D:\temp\csharpToPhp\ConsoleSeguranca\bin\Debug\ConsoleSeguranca.exe
+D:\temp\csharpToPhp\ConsoleSeguranca\bin\Debug\ConsoleSeguranca.pdb
+D:\temp\csharpToPhp\ConsoleSeguranca\obj\Debug\ConsoleSeguranca.exe
+D:\temp\csharpToPhp\ConsoleSeguranca\obj\Debug\ConsoleSeguranca.pdb
+D:\temp\csharpToPhp\ConsoleSeguranca\obj\Debug\ConsoleSeguranca.csprojResolveAssemblyReference.cache
