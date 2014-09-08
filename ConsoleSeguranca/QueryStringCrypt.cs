@@ -78,7 +78,7 @@ namespace ConsoleSeguranca
 
             //P("Retorno Encriptado", retorno);
 
-            return retorno;
+            return retorno; 
         }
 
         //Function to decode the string
@@ -243,8 +243,6 @@ namespace ConsoleSeguranca
         }
 
 
-        /*
-         
         public static string EncodeURL(string psValue, string psKey)
         {
             MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider();
@@ -282,11 +280,6 @@ namespace ConsoleSeguranca
             return sDataValue;
         }
           
-          
-         * 
-         * 
-          
-         */
         /*
         private byte[] Encrypt2(string plainText)
         {

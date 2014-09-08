@@ -16,7 +16,10 @@ namespace ConsoleSeguranca
         /// <returns>hashcode MD5 para a palavra informada</returns> 
         public static string MD5HashCode(string Palavra)
         {
+
             Byte[] originalBytes = ASCIIEncoding.Default.GetBytes(Palavra);
+
+            //Byte[] originalBytes = Encoding.UTF8.GetBytes(Palavra);
             MD5 md5 = new MD5CryptoServiceProvider();
             Byte[] encodedBytes = md5.ComputeHash(originalBytes);
             string password = "";
