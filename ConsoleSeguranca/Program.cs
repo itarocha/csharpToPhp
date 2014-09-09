@@ -10,25 +10,30 @@ namespace ConsoleSeguranca
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine(ASCIIEncoding.Default.CodePage); // 1252
-            Console.WriteLine(ASCIIEncoding.ASCII.CodePage); // 20127
-            Console.WriteLine(ASCIIEncoding.ASCII.CodePage); // 20127
-            Console.WriteLine(Encoding.UTF8.CodePage); // 65001
 
             //TestarEncodeDecodeString();
-            //TestarEncodeDecodeURL();
-            string x = Crypt.MD5HashCode("cafe");
-
-            string texto = "ÁÉFAé";
-
-            Byte[] ascii = ASCIIEncoding.Default.GetBytes(texto);
-            Byte[] utf = Encoding.UTF8.GetBytes(texto);
-
+            TestarEncodeDecodeURL();
 
             Console.WriteLine("Pressione algo...");
             Console.ReadKey();
         }
 
+        private static void TestarAleatorio() {
+            Console.WriteLine(ASCIIEncoding.Default.CodePage); // 1252
+            Console.WriteLine(ASCIIEncoding.ASCII.CodePage); // 20127
+            Console.WriteLine(ASCIIEncoding.ASCII.CodePage); // 20127
+            Console.WriteLine(Encoding.UTF8.CodePage); // 65001
+
+            string x = Crypt.MD5HashCode("café");
+            Console.WriteLine(x);
+
+            string texto = "ÁÉFAé";
+
+            Byte[] ascii = ASCIIEncoding.Default.GetBytes(texto);
+            Byte[] utf = Encoding.UTF8.GetBytes(texto);
+        }
+
+        
         private static void TestarEncodeDecodeString()
         {
             string texto = "ALFA";
@@ -69,10 +74,10 @@ namespace ConsoleSeguranca
         private static void TestarEncodeDecodeURL() {
             string texto = "ALFA";
             string chave = "678";
-            
-            //texto = "DELTATRONICKÉFAÁé:zz";
-            //texto = "DELTATRONICKÉFAÁé:zz";
+
             texto = "ÁÉFAÁé:ABCDEFG";
+            //texto = "DELTATRONICKÉFAÁé:zz";
+            texto = "DELTATRONICKÉFAÁé:zz";
             chave = "5688782255";
             
             string saida = QueryStringCrypt.Ita_EncodeURL(texto, chave);
